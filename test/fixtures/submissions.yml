@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player: one
+  item: one
+  photo: MyString
+  correct: false
+  points: 1
+
+two:
+  player: two
+  item: two
+  photo: MyString
+  correct: false
+  points: 1

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  num_items: 1
+  time_limit: 1
+  penalty: 1
+  scoring_mode: MyString
+  uuid: MyString
+
+two:
+  location: MyString
+  num_items: 1
+  time_limit: 1
+  penalty: 1
+  scoring_mode: MyString
+  uuid: MyString
