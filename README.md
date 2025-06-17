@@ -21,4 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+## Docker Setup
+
+Use `docker-compose up` to start the application in development. The `web`
+service automatically runs any pending database migrations on boot.
