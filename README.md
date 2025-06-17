@@ -25,6 +25,8 @@ Things you may want to cover:
 
 Use `docker-compose up` to start the application in development. The `web`
 service automatically runs any pending database migrations on boot.
+If Docker emits TLS errors while pulling images, ensure your internet connection
+is available or try again using the default `ruby:3.3-slim` image.
 
 ## Joining a Game
 
@@ -37,8 +39,11 @@ payload:
 ```
 
 After subscribing the server responds with the list of scavenger items for
-that game. Send a JSON message with `{ "action": "join", "name": "Player" }`
-to register as a player. Submitting photos is done with:
+that game. A simple way to join over HTTP is by visiting
+`http://localhost:3000/players/new?game_id=GAME_UUID` or sending a POST request
+to `http://localhost:3000/players` with `player[game_id]` and
+`player[name]` parameters. You can also join via WebSockets by sending
+`{ "action": "join", "name": "Player" }`. Submitting photos is done with:
 
 ```json
 {"action":"submit","player_id":1,"item_id":2,"photo":"/path/to/image.jpg"}
