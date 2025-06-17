@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  game: one
+  name: MyString
+  admin: false
+  total_score: 1
+
+two:
+  game: two
+  name: MyString
+  admin: false
+  total_score: 1
