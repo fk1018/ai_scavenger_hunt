@@ -31,6 +31,7 @@ is available or try again using the default `ruby:3.3-slim` image.
 ## Joining a Game
 
 Each game has a `uuid` that players use to connect over WebSockets.
+A UUID is automatically generated whenever a new game is created.
 Connect to `ws://localhost:3000/cable` with the following subscription
 payload:
 

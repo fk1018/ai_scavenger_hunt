@@ -65,6 +65,6 @@ class GamesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def game_params
-      params.require(:game).permit(:location, :num_items, :time_limit, :penalty, :scoring_mode, :uuid)
+      params.require(:game).permit(:location, :num_items, :time_limit, :penalty, :scoring_mode)
     end
 end

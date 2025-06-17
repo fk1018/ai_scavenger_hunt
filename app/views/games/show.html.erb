@@ -3,6 +3,7 @@
 <%= render @game %>
 
 <div>
+  <%= link_to "Join this game", new_player_path(game_id: @game.id) %> |
   <%= link_to "Edit this game", edit_game_path(@game) %> |
   <%= link_to "Back to games", games_path %>
 
